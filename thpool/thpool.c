@@ -52,7 +52,7 @@ static void* thread_do(thpool_t *p) {
     while (p->running) {
       j = jobqueue_pop(p->queue);
       if (j!=NULL) {
-        j->function(j->function);
+        j->function(j->args);
       }
     }
     if (!p->running) break;

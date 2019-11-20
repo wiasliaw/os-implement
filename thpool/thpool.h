@@ -6,7 +6,7 @@
 #include <signal.h>
 #include <stdbool.h>
 #include "thpool.h"
-#include "jobqueue.h"
+#include "../jobqueue/jobqueue.h"
 
 typedef struct thpool {
   pthread_t *threads;

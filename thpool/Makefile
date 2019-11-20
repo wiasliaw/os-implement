@@ -4,7 +4,7 @@ jobq=jobqueue
 pool=thpool
 
 example:
-	$(CC) $(EXP).c $(pool).c $(jobq).c -lpthread -o $(EXP)
+	$(CC) $(EXP).c $(pool).c  ../$(jobq)/$(jobq).c -lpthread -o $(EXP)
 
 clean:
 	rm -rf $(EXP)
